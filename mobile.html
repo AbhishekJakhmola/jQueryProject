@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mobile</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+	<script
+  		src="https://code.jquery.com/jquery-3.4.1.min.js"
+  		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  		crossorigin="anonymous"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".display").prop("disabled","true");
+			$(".seconds").css("display","none");
+			$("#okay").click(function(){
+				var pre = document.querySelector(".display").value;
+				if(pre.length>0){
+				$("#display").val(document.querySelector(".display").value);
+				$(".firsts").css("display","none");
+				$(".seconds").css("display","block");
+			}
+			});		
+			$("#ncall").click(function(){
+				$(".seconds").css("display","none");
+				$(".firsts").css("display","block");
+			});
+			$("#ankit").click(function(){
+				$("#display").val("Ankit 9987976754");
+				$(".firsts").css("display","none");
+				$(".seconds").css("display","block");
+			});
+			$("#amit").click(function(){
+				$("#display").val("Amit 9532176754");
+				$(".firsts").css("display","none");
+				$(".seconds").css("display","block");
+			});	
+			$("#sanju").click(function(){
+				$("#display").val("Sanju 9987965432");
+				$(".firsts").css("display","none");
+				$(".seconds").css("display","block");
+			});
+			$("#key-1").click(function(){
+				var pre = document.querySelector(".display").value;
+				$(".display").val(pre+"1");
+			});
+
+			$("#key-2").click(function(){
+				var pre = document.querySelector(".display").value;
+				$(".display").val(pre+"2");
+			});
+
+			$("#key-3").click(function(){
+				var pre = document.querySelector(".display").value;
+				$(".display").val(pre+"3");
+			});
+
+			$("#key-4").click(function(){
+				var pre = document.querySelector(".display").value;
+				$(".display").val(pre+"4");
+			});
+
+			$("#key-5").click(function(){
+				var pre = document.querySelector(".display").value;
+				$(".display").val(pre+"5");
+			});
+
+			$("#key-6").click(function(){
+				var pre = document.querySelector(".display").value;
+				$(".display").val(pre+"6");
+			});
+
+			$("#key-7").click(function(){
+				var pre = document.querySelector(".display").value;
+				$(".display").val(pre+"7");
+			});
+
+			$("#key-8").click(function(){
+				var pre = document.querySelector(".display").value;
+				$(".display").val(pre+"8");
+			});
+
+			$("#key-9").click(function(){
+				var pre = document.querySelector(".display").value;
+				$(".display").val(pre+"9");
+			});
+
+			$("#key-0").click(function(){
+				var pre = document.querySelector(".display").value;
+				$(".display").val(pre+"0");
+			});
+
+			$("#key-*").click(function(){
+				var pre = document.querySelector(".display").value;
+				$(".display").val(pre+"*");
+			});
+
+			$("#key-#").click(function(){
+				var pre = document.querySelector(".display").value;
+				$(".display").val(pre+"#");
+			});
+
+		});
+	</script>
+	<style>
+	#rcorners {
+  	border-radius: 25px;
+  	border-color: black;
+  	border-style: solid;
+  	border-width:  10px;
+  	width: 250px;
+  	height: 450px;
+	}
+
+	#contact{
+	border-style: solid;
+	border-color: blue;
+	border-width: 2px;
+	width: 246px;
+	background-color:darkturquoise ;	
+	border-radius: 15px 15px 0px 0px;
+	}
+	.btn {
+  	background-color: DodgerBlue;
+  	border: none;
+  	color: white;
+  	padding: 12px 16px;
+  	font-size: 16px;
+  	cursor: pointer;
+  	width: 246px;
+	}
+	.btn:hover {
+  	background-color: RoyalBlue;
+	}
+	.btno{
+	width: 80px;
+	height: 30px;
+	}
+	.btno:hover {
+  	background-color: RoyalBlue;
+	}
+	.btnc{
+	width: 40px;
+	height: 40px;
+	border-radius: 40px;
+	float: left;
+	}
+	.btnc:hover{
+	background-color: chartreuse;
+	}
+	.display{
+		width: 246px;
+		height: 40px;
+	}
+	#mid{
+		height: 125px;
+		background-color: cornflowerblue;
+	}
+	.seconds{
+		background-color: forestgreen;
+	}
+	#display{
+		width: 247px;
+		height:60px;
+		margin-top: 50px;
+	}
+	</style>
+</head>
+<body>
+<center>
+	<div id="rcorners" class="firsts">
+		<div>
+			<div id="contact">
+				<p>CONTACTS</p>
+				<button class="btn" id="ankit"><i class="fa fa-phone"></i> Ankit</button>
+				<button class="btn" id="amit"><i class="fa fa-phone"></i> Amit</button>
+				<button class="btn" id="sanju"><i class="fa fa-phone"></i> Sanju</button>
+			</div>
+			<div id="mid">
+				<button class="btnc" id="okay"><i class="fa fa-phone"></i></button>
+				<input type="text" class="display" >
+			</div>
+			<div>
+				<button class="btno" id="key-1" >1</button>
+  				<button class="btno" id="key-2" >2</button>
+  				<button class="btno" id="key-3" >3</button>
+  				<button class="btno" id="key-4" >4</button>
+  				<button class="btno" id="key-5" >5</button>
+  				<button class="btno" id="key-6" >6</button>
+  				<button class="btno" id="key-7" >7</button>
+  				<button class="btno" id="key-8" >8</button>
+  				<button class="btno" id="key-9" >9</button>
+  				<button class="btno" id="key-*" >*</button>
+  				<button class="btno" id="key-0" >0</button>
+  				<button class="btno" id="key-#" >#</button>
+			</div>
+		</div>
+	</div>
+	<div id="rcorners" class="seconds">
+		<i class="far fa-user" style='font-size:128px; margin-top: 30px; margin-bottom: 20px;'></i>
+		<div>
+			<input type="text" id="display" name="">
+		</div>
+		<div>
+				<button id="call" style="margin-top: 40px; margin-right: 20px; background-color:DodgerBlue "><i class="fa fa-phone" style="font-size: 40px"></i></button>
+  				<button id="ncall" style="margin-top: 40px; margin-left: 20px; background-color:red "><i class="fa fa-phone-slash" style="font-size: 40px"></i></button>
+  		</div>
+	</div>
+</center>
+
+</body>
+</html>
